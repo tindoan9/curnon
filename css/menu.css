@@ -1,0 +1,167 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    html {
+        font-family: 'Josefin Slab', serif;
+        color: #5a5a5a;
+        background-color: white;
+        text-rendering: optimizeLegibility;
+    }
+    h3,h6 {
+        text-align: center;
+    }
+    a {
+        text-decoration: none;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    /*----header menu----*/
+    .menu {
+        margin: 0px;
+        padding: 0px;
+        border-radius: 1px;
+        box-shadow: 0 0 9px whitesmoke;
+        list-style: none;
+        background-color: aliceblue;
+        height: 70px;
+        position: fixed;
+        width: 100%;
+    }
+    .menu>li:hover>.KP>li>a{
+        display: block;
+    }
+    .khampha{
+        position: absolute;
+        top: 23px;
+        left: 170px;
+    }
+    .KP>li>a{
+        color: black;
+        margin-left: -70px;
+        padding-top: 20px;
+        line-height: 30px;
+        list-style: none;
+        display: none;
+        background-color: aliceblue;
+        padding-inline: 50px;
+    }
+    .KP>li>a:hover{
+        font-weight: bolder;
+    }
+    .KP{
+        list-style: none;
+    }
+    /*-------Tai Khoan--------*/
+    .menu>li:hover>.tk>li>a{
+        display: block;
+    }
+    .TK{
+        position: absolute;
+        top: 20px;
+        left: 1100px;
+    }
+    .TK>i{
+        font-size: 24px;
+    }
+    .tk{
+        list-style: none;
+    }
+    .tk>li>a{
+        color: black;
+        margin-left: -110px;
+        padding-top: 20px;
+        line-height: 30px;
+        list-style: none;
+        display: none;
+        background-color: aliceblue;
+        padding-inline: 50px;
+    }
+    .tk>li>a:hover {
+        font-weight: bolder;
+    }
+    
+    /*------------------------*/
+    .menu>li>a {
+        display: block;
+        line-height: 70px;
+        text-decoration: none;
+        font-variant: normal;
+        padding-left: 40px;
+        color: rgb(0, 0, 0);
+    }
+    .menu>li>a:hover {
+        color: rgb(76, 4, 136);
+        transform: scale(1.1);
+        transition: all, 0.4s;
+    }
+    .menu>li {
+        float: left;
+        margin: 0 4px;
+    }
+    .gh>i {
+        position: absolute;
+        top: 24px;
+        left: 1160px;
+        font-size: 20px;
+    }
+    .menu>a>i{
+        color: black;
+        font-size: 18px;
+        position: absolute;
+        top: 25px;
+        left: 1150px;
+    }
+    /*-------------Logo--------------*/
+    .menu>a>img {
+        width: 90px;
+        position: absolute;
+        top: 10px;
+        left: 585px;
+    }
+    /*-----------Search-------*/
+    .search {
+        position: absolute;
+        top: 26px;
+        left: 1050px;
+        font-size: 18px;
+    }
+    .search_input{
+        position: absolute;
+        top: 22px;
+        left: 800px;
+        /*width: 250px;
+        height: 35px;*/
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        background-color: #fff;
+        border-radius: 30px;
+        transform: translate(70%);
+        transition: all, 0.7s;
+    }
+    .search_input.active{
+        opacity: 1;
+        pointer-events: visible;
+        visibility: visible;
+        transform: translate(0);
+    }
+    .search_controll{
+        font-size: 15px;
+        width: 250px;
+        height: 35px;
+        border: none;
+        /*outline: none;*/
+        border-radius: 30px;
+    }
